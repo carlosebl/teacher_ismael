@@ -1,0 +1,94 @@
+* {
+    background-color: #0072DC;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar a,
+.navbar a i {
+    text-decoration: none;
+}
+
+.navbar span {
+    font-size: 20px;
+}
+
+.linha {
+    border: .5px solid #fff;
+}
+
+.navbar i {
+    font-size: 32px;
+}
+
+#home h1,
+#intro h1,
+#modalidades h1,
+#porque h1,
+#sobre h1,
+#depoimentos h1,
+#interesse h1,
+#contato h1 {
+    font-size: 64px;
+    font-weight: bold;
+}
+
+#home h2 {
+    font-size: 56px;
+}
+
+#home .btn,
+#interesse .btn {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #fff;
+    color: #0072DC;
+}
+
+#home h5,
+#interesse h5 {
+    font-size: 24px;
+}
+
+#intro i {
+    font-size: 48px;
+}
+
+#intro h4,
+#modalidades h4 {
+    font-size: 32px;
+    font-weight: bold;
+    padding: 12px 0;
+}
+
+#intro p,
+#modalidades p,
+#porque p,
+#sobre p,
+#depoimentos p {
+    font-size: 28px;
+}
+
+.card {
+    border-color: #0072DC;
+}
+
+#modalidades i {
+    font-size: 72px;
+}
+
+.card .card-footer {
+    background-color: #0072DC;
+    border-top: none;
+}
+
+#modalidades .btn {
+    border-color: #fff;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.porques {
+    border-left: 4px solid #fff;
+}
