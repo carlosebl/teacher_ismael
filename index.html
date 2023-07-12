@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 <body>
-    <header class="navbar sticky-top ps-5 pe-5 pb-0">
+    <header class="navbar sticky-top ps-md-5 pe-md-5 pb-md-0">
         <div class="container">
             <a href="index.html">
                 <div>
@@ -24,7 +24,7 @@
                 </div>
             </a>
             <nav class="justify-content-end">
-                <ul class="nav nav-pills d-lg-flex">
+                <ul class="nav nav-pills d-md-flex">
                     <li class="nav-item">
                         <a href="#" class="nav-link" id="instagram">
                             <i class="bi bi-instagram"></i>
@@ -148,12 +148,12 @@
                 <h1>Sobre mim</h1>
             </div>
             <div class="row mt-5">
-                <div class="col-md-1 mt-5 me-5">
+                <div class="col-md-2 mt-5 me-5">
                     <div>
                         <img src="./images/ismael.png" alt="Foto de Isamel Calvi">
                     </div>
                 </div>
-                <div class="col-md-10 mt-5">
+                <div class="col-md-9 mt-5">
                     <p>Sou professor de inglês com 10 anos de experiência, atuando desde níveis básicos a avançados, com adolescentes e adultos. Faço preparação para provas de proficiência, negócios, viagens e demais necessidades que você tiver.</p>
                 </div>
             </div>
@@ -208,9 +208,81 @@
             <div>
                 <h1>Ou entre em contato</h1>
             </div>
-            
+            <div class="row">
+                <form class="col-md-6 mt-5">
+                    <label class="form-label" for="nome">Nome</label>
+                    <input class="form-control" type="text" id="nome" name="nome">
+                    <label class="form-label mt-3" for="email">E-mail</label>
+                    <input class="form-control" type="email" id="email" name="email">
+                    <label class="form-label mt-3" for="fone">Telefone com (DDD)</label>
+                    <input class="form-control" type="tel" id="fone" name="fone">
+                </form>
+                <form class="form-check mt-3">
+                    <p class="mb-0">Modalidade de interesse</p>
+                    <div class="modalidades ms-3">
+                        <label class="form-check-label" for="online">particular online</label>
+                        <input class="form-check-input mt-3" type="checkbox" id="online">
+                    </div>
+                    <div class="modalidades ms-3">
+                        <label class="form-check-label" for="presencial">particular presencial</label>
+                        <input class="form-check-input mt-3" type="checkbox" id="presencial">
+                    </div>
+                    <div class="modalidades ms-3">
+                        <label class="form-check-label" for="grupo">grupo de conversação</label>
+                        <input class="form-check-input mt-3" type="checkbox" id="grupo">
+                    </div>
+                    <div>
+                        <button class="btn mt-3" type="submit">enviar</button>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
+    <footer>
+
+    <footer class="navbar ps-md-5 pe-md-5 pb-md-0">
+        <div class="container">
+            <a href="index.html">
+                <div>
+                    <span>Teacher <strong>Ismael Calvi</strong></span>
+                </div>
+                <div class="linha"></div>
+                <div>
+                    <span><strong>inglês</strong> personalizado</span>
+                </div>
+            </a>
+            <nav class="justify-content-end">
+                <ul class="nav nav-pills d-lg-flex">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" id="whatsapp">
+                            <i class="bi bi-whatsapp"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/jquery.validate.min.js"></script>
+    <script src="./js/messages_pt_BR.js"></script>
+    <script>
+        $('#fone').mask('(00) 00000-0000');
+
+        $('form').validate({
+            rules: {
+                email: {
+                    email: true
+                }
+            }
+        })
+    </script>
 </body>
 </html>

@@ -38,7 +38,8 @@
 }
 
 #home .btn,
-#interesse .btn {
+#interesse .btn,
+#contato .btn {
     font-size: 36px;
     font-weight: bold;
     background-color: #fff;
@@ -65,7 +66,9 @@
 #modalidades p,
 #porque p,
 #sobre p,
-#depoimentos p {
+#depoimentos p,
+#contato p,
+#contato label {
     font-size: 28px;
 }
 
@@ -91,4 +94,71 @@
 
 .porques {
     border-left: 4px solid #fff;
+}
+
+.modalidades .form-check-input:checked {
+    border-color: #fff;
+}
+
+@media (max-width: 767px) {
+    #home h1,
+    #intro h1,
+    #modalidades h1,
+    #porque h1,
+    #sobre h1,
+    #depoimentos h1,
+    #interesse h1,
+    #contato h1 {
+        font-size: 48px;
+    }
+
+    #home h2 {
+        font-size: 40px;
+    }
+
+    #home .btn,
+    #interesse .btn,
+    #contato .btn {
+        font-size: 20px;
+    }
+
+    #home h5,
+    #interesse h5 {
+        font-size: 16px;
+    }
+
+    #intro i {
+        font-size: 32px;
+    }
+
+    #intro h4,
+    #modalidades h4 {
+        font-size: 20px;
+    }
+
+    #intro p,
+    #modalidades p,
+    #porque p,
+    #sobre p,
+    #depoimentos p,
+    #contato p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    #home .btn,
+    #interesse .btn,
+    #contato .btn {
+        font-size: 28px;
+    }
+
+    #intro p,
+    #modalidades p,
+    #porque p,
+    #sobre p,
+    #depoimentos p,
+    #contato p {
+        font-size: 20px;
+    }
 }
