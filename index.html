@@ -26,12 +26,12 @@
             <nav class="justify-content-end">
                 <ul class="nav nav-pills d-md-flex">
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="instagram">
+                        <a href="https://www.instagram.com/ismaelcs.english/" class="nav-link" id="instagram" target="_blank">
                             <i class="bi bi-instagram"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="whatsapp">
+                        <a href="https://wa.me/5551997893912" class="nav-link" id="whatsapp" target="_blank">
                             <i class="bi bi-whatsapp"></i>
                         </a>
                     </li>
@@ -48,7 +48,7 @@
                         <h2>de acordo com as suas necessidades</h2> 
                     </div>
                     <div class="pt-5">
-                        <button class="btn mb-3" type="button">agende sua aula</button>
+                        <a href="#contato"><button class="btn mb-3" type="button">agende sua aula</button></a>
                         <h5>*Aula experimental gratuita</h5>
                     </div>
                 </div>
@@ -90,7 +90,7 @@
                     <div>
                         <h4>Particular<br>online</h4>
                         <p>Aulas dinâmicas de<br>onde você quiser</p>
-                        <button class="btn" type="button">tenho interesse</button>
+                        <a href="#contato"><button class="btn" type="button">tenho interesse</button></a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
@@ -100,7 +100,7 @@
                     <div>
                         <h4>Particular<br>presencial</h4>
                         <p>Específica para quem<br>mora em Porto Alegre</p>
-                        <button class="btn" type="button">tenho interesse</button>
+                        <a href="#contato"><button class="btn" type="button">tenho interesse</button></a>
                     </div>
                 </div>
                 <div class="col-md-4 mt-5">
@@ -110,7 +110,7 @@
                     <div>
                         <h4>Grupo de<br>conversação</h4>
                         <p>Focado em interação,<br>de 3 a 6 estudantes</p>
-                        <button class="btn" type="button">tenho interesse</button>
+                        <a href="#contato"><button class="btn" type="button">tenho interesse</button></a>
                     </div>
                 </div>
             </div>
@@ -198,7 +198,7 @@
                 <h1>Interessou?</h1>
             </div>
             <div class="pt-5">
-                <button class="btn mb-3" type="button">agende sua aula</button>
+                <a href="#contato"><button class="btn mb-3" type="button">agende sua aula</button></a>
                 <h5>*Aula experimental gratuita</h5>
             </div>
         </div>
@@ -209,39 +209,40 @@
                 <h1>Ou entre em contato</h1>
             </div>
             <div class="row">
-                <form class="col-md-6 mt-5" action="https://formsubmit.co/carlosebl@gmail.com" method="POST">
+                <form class="col-md-6 mt-5" action="https://formsubmit.co/ismaelcs.english@gmail.com" method="POST">
                     <label class="form-label" for="nome">Nome</label>
-                    <input class="form-control" type="text" id="nome" name="nome">
-                    <label class="form-label mt-3" for="email">E-mail</label>
+                    <input class="form-control" type="text" id="nome" name="nome" required>
+                    <label class="form-label mt-3" for="email">E-mail</label required>
                     <input class="form-control" type="email" id="email" name="email">
-                    <label class="form-label mt-3" for="fone">Telefone com (DDD)</label>
-                    <input class="form-control" type="tel" id="fone" name="fone">
-                    <label class="form-label mt-3" for="nome">Sua mensagem</label>
-                    <textarea class="form-control" id="mensagem"></textarea>
-                </form>
-                <form class="form-check mt-3">
-                    <p class="mb-0">Modalidade de interesse</p>
-                    <div class="modalidades ms-3">
-                        <label class="form-check-label" for="online">particular online</label>
-                        <input class="form-check-input mt-3" name="online" type="checkbox" id="online">
+                    <label class="form-label mt-3" for="telefone">Telefone com (DDD)</label>
+                    <input class="form-control" type="tel" id="telefone" name="telefone">
+                    <label class="form-label mt-3" for="mensagem">Sua mensagem</label>
+                    <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                    <div class="form-check mt-3">
+                        <p class="mb-0">Modalidade de interesse</p>
+                        <div class="modalidades">
+                            <label class="form-check-label" for="online">particular online</label>
+                            <input class="form-check-input mt-3" name="online" type="checkbox" id="online">
+                        </div>
+                        <div class="modalidades">
+                            <label class="form-check-label" for="presencial">particular presencial</label>
+                            <input class="form-check-input mt-3" name="presencial" type="checkbox" id="presencial">
+                        </div>
+                        <div class="modalidades">
+                            <label class="form-check-label" for="grupo">grupo de conversação</label>
+                            <input class="form-check-input mt-3" name="grupo" type="checkbox" id="grupo">
+                        </div>
+                        <div>
+                            <button class="btn mt-3" type="submit">enviar</button>
+                        </div>
                     </div>
-                    <div class="modalidades ms-3">
-                        <label class="form-check-label" for="presencial">particular presencial</label>
-                        <input class="form-check-input mt-3" name="presencial" type="checkbox" id="presencial">
-                    </div>
-                    <div class="modalidades ms-3">
-                        <label class="form-check-label" for="grupo">grupo de conversação</label>
-                        <input class="form-check-input mt-3" name="grupo" type="checkbox" id="grupo">
-                    </div>
-                    <div>
-                        <button class="btn mt-3" type="submit">enviar</button>
-                    </div>
+                    <input type="hidden" name="_subject" value="Nova mensagem!">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
                 </form>
             </div>
         </div>
     </section>
-    <footer>
-
     <footer class="navbar ps-md-5 pe-md-5 pb-md-0">
         <div class="container">
             <a href="index.html">
@@ -256,12 +257,12 @@
             <nav class="justify-content-end">
                 <ul class="nav nav-pills d-lg-flex">
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="instagram">
+                        <a href="https://www.instagram.com/ismaelcs.english/" class="nav-link" id="instagram" target="_blank">
                             <i class="bi bi-instagram"></i>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link" id="whatsapp">
+                        <a href="https://wa.me/5551997893912" class="nav-link" id="whatsapp" target="_blank">
                             <i class="bi bi-whatsapp"></i>
                         </a>
                     </li>
@@ -276,7 +277,7 @@
     <script src="./js/jquery.validate.min.js"></script>
     <script src="./js/messages_pt_BR.js"></script>
     <script>
-        $('#fone').mask('(00) 00000-0000');
+        $('#telefone').mask('(00) 00000-0000');
 
         $('form').validate({
             rules: {
