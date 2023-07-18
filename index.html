@@ -209,31 +209,36 @@
                 <h1>Ou entre em contato</h1>
             </div>
             <div class="row">
-                <form class="col-md-6 mt-5">
+                <form class="col-md-6 mt-5" action="https://formsubmit.co/carlosebl@gmail.com" method="POST">
                     <label class="form-label" for="nome">Nome</label>
                     <input class="form-control" type="text" id="nome" name="nome">
                     <label class="form-label mt-3" for="email">E-mail</label>
                     <input class="form-control" type="email" id="email" name="email">
                     <label class="form-label mt-3" for="fone">Telefone com (DDD)</label>
                     <input class="form-control" type="tel" id="fone" name="fone">
+                    <label class="form-label mt-3" for="nome">Sua mensagem</label>
+                    <textarea class="form-control" id="mensagem"></textarea>
                 </form>
                 <form class="form-check mt-3">
                     <p class="mb-0">Modalidade de interesse</p>
                     <div class="modalidades ms-3">
                         <label class="form-check-label" for="online">particular online</label>
-                        <input class="form-check-input mt-3" type="checkbox" id="online">
+                        <input class="form-check-input mt-3" name="online" type="checkbox" id="online">
                     </div>
                     <div class="modalidades ms-3">
                         <label class="form-check-label" for="presencial">particular presencial</label>
-                        <input class="form-check-input mt-3" type="checkbox" id="presencial">
+                        <input class="form-check-input mt-3" name="presencial" type="checkbox" id="presencial">
                     </div>
                     <div class="modalidades ms-3">
                         <label class="form-check-label" for="grupo">grupo de conversação</label>
-                        <input class="form-check-input mt-3" type="checkbox" id="grupo">
+                        <input class="form-check-input mt-3" name="grupo" type="checkbox" id="grupo">
                     </div>
                     <div>
                         <button class="btn mt-3" type="submit">enviar</button>
                     </div>
+                    <input type="hidden" name="_subject" value="Novo Contato">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_captcha" value="false">
                 </form>
             </div>
         </div>
@@ -284,5 +289,10 @@
             }
         })
     </script>
+    <?php
+        if (isset($_POST["acao"])){
+        echo "<script>alert('Formulário Foi enviado pelo método POST')</script>";
+        }
+    ?>
 </body>
 </html>
